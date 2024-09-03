@@ -1,0 +1,434 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Benjamin Attal</title>
+
+    <meta name="author" content="Benjamin Attal">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Benjamin Attal
+                </p>
+                <p>
+                  I'm entering my 6th year as a PhD student at Carnegie Mellon University, where I'm advised by Professor <a href="https://www.cs.cmu.edu/~motoole2/">Matthew O'Toole</a>. Previously, I received my Bachelor's and Master's degrees in Computer Science and Applied Math from Brown University. I'm supported by the <a href="https://research.facebook.com/fellows/attal-benjamin/">Meta PhD fellowship</a> in AR/VR Computer Graphics.
+                </p>
+                <p style="text-align:center">
+                  <a href="mailto:battal@andrew.cmu.edu">Email</a> &nbsp;/&nbsp;
+                  <a href="data/resume_battal.pdf">CV</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?user=QQd_jNwAAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
+                </p>
+              </td>
+              <td style="padding:2.5%;width:40%;max-width:40%">
+                <a href="images/battal.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/battal.jpg" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Research</h2>
+                <p>
+                  My research lies at the intersection of computer vision, computational imaging, and machine learning.
+                  I am interested in leveraging physics-based light transport and neural fields to design robust systems for inverse rendering and 3D reconstruction.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+    <tr onmouseout="flash_cache_stop()" onmouseover="flash_cache_start()">
+      <td style="padding:20px;padding-top:50px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='flash_cache_image'><video  width=100% muted autoplay loop>
+          <source src="images/flash_cache.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/flash_cache.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function flash_cache_start() {
+            document.getElementById('flash_cache_image').style.opacity = "1";
+          }
+
+          function flash_cache_stop() {
+            document.getElementById('flash_cache_image').style.opacity = "0";
+          }
+          flash_cache_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="">
+          <span class="papertitle">Flash Cache: Reducing Bias in Radiance Cache Based Inverse Rendering</span>
+        </a>
+        <br>
+        <strong>Benjamin Attal</strong>,
+        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+        <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+        <a href="https://phogzone.com/">Peter Hedman</a>,
+        <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+        <a href="https://www.cs.cmu.edu/~motoole2/">Matthew O'Toole</a>,
+        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>
+        <br>
+        <em>ECCV</em>, 2024 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+        <br>
+        project page
+        /
+        paper
+        <p></p>
+        <p>
+          A more physically-accurate inverse rendering system based on radiance caching for recovering geometry, materials, and lighting from RGB images of an object or scene.
+        </p>
+      </td>
+    </tr>
+
+
+    <tr onmouseout="ftorf_stop()" onmouseover="ftorf_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='ftorf_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/ftorf.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/ftorf.gif' width="160">
+        </div>
+        <script type="text/javascript">
+          function ftorf_start() {
+            document.getElementById('ftorf_image').style.opacity = "1";
+          }
+
+          function ftorf_stop() {
+            document.getElementById('ftorf_image').style.opacity = "0";
+          }
+          ftorf_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://mmehas.github.io/files/ftorf.pdf">
+			<span class="papertitle">Flowed Time of Flight Radiance Fields</span>
+        </a>
+        <br>
+        <a href="https://mmehas.github.io/">Mikhail Okunev*</a>,
+        <a href="https://www.linkedin.com/in/marcmapeke/">Marc Mapeke*</a>,
+        <strong>Benjamin Attal</strong>,
+        <a href="https://richardt.name/">Christian Richardt</a>,
+        <a href="https://www.cs.cmu.edu/~motoole2/">Matthew O'Toole</a>,
+        <a href="https://jamestompkin.com/">James Tompkin</a>
+        <br>
+        <em>ECCV</em>, 2024
+        <br>
+        project page
+        /
+        <a href="https://mmehas.github.io/files/ftorf.pdf">paper</a>
+        <p></p>
+        <p>
+          C-ToF depth cameras can't reconstruct dynamic objects well.
+          We fix that with our NeRF model that takes raw ToF signal and reconstructs motion along with the depth.
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="nfsl_stop()" onmouseover="nfsl_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='nfsl_image'><video  width=100% muted autoplay loop>
+          <source src="images/nfsl.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/nfsl.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function nfsl_start() {
+            document.getElementById('nfsl_image').style.opacity = "1";
+          }
+
+          function nfsl_stop() {
+            document.getElementById('nfsl_image').style.opacity = "0";
+          }
+          nfsl_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://imaging.cs.cmu.edu/nfsl/">
+          <span class="papertitle">Neural Fields for Structured Lighting</span>
+        </a>
+        <br>
+		<a href="https://www.linkedin.com/in/aarrushi-sh/">Aarrushi Shandilya </a>,
+    <strong>Benjamin Attal</strong>,
+    <a href="https://richardt.name/">Christian Richardt</a>,
+    <a href="https://jamestompkin.com/">James Tompkin</a>,
+    <a href="https://www.cs.cmu.edu/~motoole2/">Matthew O'Toole</a>
+        <br>
+        <em>ICCV</em>, 2023
+        <br>
+        <a href="https://imaging.cs.cmu.edu/nfsl/">project page</a>
+        /
+        <a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Shandilya_Neural_Fields_for_Structured_Lighting_ICCV_2023_paper.pdf">paper</a>
+        <p></p>
+        <p>
+          We apply a neural volume rendering framework to the raw images from structured-light sensors in order to achieve high-quality 3D reconstruction.
+        </p>
+      </td>
+    </tr>
+	
+
+
+    <tr onmouseout="hyperreel_stop()" onmouseover="hyperreel_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='hyperreel_image'><video  width=110% muted autoplay loop>
+          <source src="images/hyperreel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/hyperreel.png' width=110%>
+        </div>
+        <script type="text/javascript">
+          function hyperreel_start() {
+            document.getElementById('hyperreel_image').style.opacity = "1";
+          }
+
+          function hyperreel_stop() {
+            document.getElementById('hyperreel_image').style.opacity = "0";
+          }
+          hyperreel_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://hyperreel.github.io/">
+          <span class="papertitle">HyperReel: High-Fidelity 6-DoF Video with Ray-Conditioned Sampling</span>
+        </a>
+        <br>
+		<strong>Benjamin Attal</strong>,
+		<a href="https://jbhuang0604.github.io/">Jia-Bin Huang</a>,
+		<a href="https://richardt.name/">Christian Richardt</a>,
+		<a href="https://zollhoefer.com/">Michael Zollhoefer</a>,
+		<a href="https://johanneskopf.de/">Johannes Kopf</a>,
+		<a href="https://www.cs.cmu.edu/~motoole2/">Matthew O'Toole</a>,
+		<a href="https://changilkim.com/">Changil Kim</a>
+        <br>
+        <em>CVPR</em>, 2023 &nbsp <font color="red"><strong>(Highlight)</strong></font>
+        <br>
+        <a href="https://hyperreel.github.io/">project page</a>
+        /
+        <a href="https://www.youtube.com/watch?v=8vi5K8pTM3c&embeds_referring_euri=https%3A%2F%2Fhyperreel.github.io%2F&source_ve_path=MjM4NTE">video</a>
+        /
+        <a href="https://www.youtube.com/watch?v=8vi5K8pTM3c&embeds_referring_euri=https%3A%2F%2Fhyperreel.github.io%2F&source_ve_path=MjM4NTE">paper</a>
+        <p></p>
+        <p>
+          A 6-DoF video pipeline based on neural radiance fields that achieves a good trade-off between speed, quality, and memory efficiency.
+          It excels at representing challenging view-dependent effects such as reflections and refractions.
+        </p>
+      </td>
+    </tr>
+
+  <tr onmouseout="rsen_stop()" onmouseover="rsen_start()">
+    <td style="padding:20px;padding-top:50px;width:25%;vertical-align:middle">
+      <div class="one">
+        <div class="two" id='rsen_image'><video  width=110% muted autoplay loop>
+        <source src="images/rsen.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video></div>
+        <img src='images/rsen.png' width=110%>
+      </div>
+      <script type="text/javascript">
+        function rsen_start() {
+          document.getElementById('rsen_image').style.opacity = "1";
+        }
+
+        function rsen_stop() {
+          document.getElementById('rsen_image').style.opacity = "0";
+        }
+        rsen_stop()
+      </script>
+    </td>
+    <td style="padding:20px;width:75%;vertical-align:middle">
+      <a href="https://neural-light-fields.github.io/">
+        <span class="papertitle">Learning Neural Light Fields with Ray-Space Embedding Networks</span>
+      </a>
+      <br>
+		<strong>Benjamin Attal</strong>,
+		<a href="https://jbhuang0604.github.io/">Jia-Bin Huang</a>,
+		<a href="https://zollhoefer.com/">Michael Zollhoefer</a>,
+		<a href="https://johanneskopf.de/">Johannes Kopf</a>,
+		<a href="https://www.cs.cmu.edu/~motoole2/">Matthew O'Toole</a>,
+		<a href="https://changilkim.com/">Changil Kim</a>
+        <br>
+        <em>CVPR</em>, 2022
+        <br>
+      <a href="https://neural-light-fields.github.io/">project page</a>
+      /
+      <a href="https://www.youtube.com/watch?v=Emnd16FxVHc">video</a>
+      /
+      <a href="https://arxiv.org/abs/2112.01523">paper</a>
+      <p></p>
+      <p>
+        A fast and compact neural field representation for light fields.
+      </p>
+    </td>
+  </tr>
+	
+
+  <tr onmouseout="mixedstate_stop()" onmouseover="mixedstate_start()">
+    <td style="padding:20px;width:25%;vertical-align:middle">
+      <div class="one">
+        <div class="two" id='mixedstate_image'><video  width=100% height=100% muted autoplay loop>
+        <source src="images/mixedstate.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video></div>
+        <img src='images/mixedstate.png' width="160">
+      </div>
+      <script type="text/javascript">
+        function mixedstate_start() {
+          document.getElementById('mixedstate_image').style.opacity = "1";
+        }
+
+        function mixedstate_stop() {
+          document.getElementById('mixedstate_image').style.opacity = "0";
+        }
+        mixedstate_stop()
+      </script>
+    </td>
+    <td style="padding:20px;width:75%;vertical-align:middle">
+      <a href="https://imaging.cs.cmu.edu/mixedstate/">
+        <span class="papertitle">Towards Mixed-State Coded Diffraction Imaging</span>
+      </a>
+      <br>
+			
+		<strong>Benjamin Attal</strong>,
+		<a href="https://www.cs.cmu.edu/~motoole2/">Matthew O'Toole</a>
+      <br>
+      <em>TPAMI</em>, 2022
+      <br>
+      <a href="https://imaging.cs.cmu.edu/mixedstate/">project page</a>
+      /
+      <a href="https://imaging.cs.cmu.edu/mixedstate/assets/mixedstateimaging.pdf">paper</a>
+      <p></p>
+      <p>
+        A practical coded diffraction imaging framework that can decouple mutually incoherent mixed-states, such as different wavelengths.
+        Applications in computational microscopy.
+      </p>
+    </td>
+  </tr>
+	
+	
+    <tr onmouseout="torf_stop()" onmouseover="torf_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='torf_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/torf.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/torf.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function torf_start() {
+            document.getElementById('torf_image').style.opacity = "1";
+          }
+
+          function torf_stop() {
+            document.getElementById('torf_image').style.opacity = "0";
+          }
+          torf_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://imaging.cs.cmu.edu/torf/">
+			<span class="papertitle">TöRF: Time-of-Flight Radiance Fields for Dynamic Scene View Synthesis</span>
+        </a>
+        <br>
+      <strong>Benjamin Attal</strong>,
+      <a href="https://www.eliotlaidlaw.com/">Eliot Laidlaw</a>,
+      <a href="https://skylion007.github.io/">Aaron Gokaslan</a>,
+      <a href="https://richardt.name/">Christian Richardt</a>,
+      <a href="https://jamestompkin.com/">James Tompkin</a>,
+      <a href="https://www.cs.cmu.edu/~motoole2/">Matthew O'Toole</a>
+        <br>
+        <em>NeurIPS</em>, 2021
+        <br>
+        <a href="https://imaging.cs.cmu.edu/torf/">project page</a>
+        /
+        <a href="https://arxiv.org/pdf/2109.15271">paper</a>
+        <p></p>
+        <p>
+          We apply a phasor volume rendering model to the raw images from C-ToF sensors in order to achieve high-quality 3D torfstruction of static and dynamic scenes.
+        </p>
+      </td>
+    </tr>
+
+
+<tr onmouseout="msi_stop()" onmouseover="msi_start()">
+  <td style="padding:20px;width:25%;vertical-align:middle">
+    <div class="one">
+    <div class="two" id='msi_image'><video  width=100% height=100% muted autoplay loop>
+    <source src="images/msi.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video></div>
+      <img src='images/msi.png' width="160">
+    </div>
+    <script type="text/javascript">
+      function msi_start() {
+        document.getElementById('msi_image').style.opacity = "1";
+      }
+
+      function msi_stop() {
+        document.getElementById('msi_image').style.opacity = "0";
+      }
+      msi_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="https://visual.cs.brown.edu/projects/matryodshka-webpage/">
+      <span class="papertitle">MatryODShka: Real-time 6DoF Video View Synthesis using Multi-Sphere Images</span>
+    </a>
+    <br>
+      <strong>Benjamin Attal</strong>,
+      <a href="https://iszihan.github.io/">Selena Ling</a>,
+      <a href="https://skylion007.github.io/">Aaron Gokaslan</a>,
+      <a href="https://richardt.name/">Christian Richardt</a>,
+      <a href="https://jamestompkin.com/">James Tompkin</a>,
+    <br>
+    <em>ECCV</em>, 2020 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+    <br>
+    <a href="https://visual.cs.brown.edu/projects/matryodshka-webpage/">project page</a>
+    /
+    <a href="https://visual.cs.brown.edu/projects/matryodshka-webpage/MatryODShka_PresentationVideo.mp4">video</a>
+    /
+    <a href="https://visual.cs.brown.edu/projects/matryodshka-webpage/MatryODShka_ECCV2020.pdf">paper</a>
+    <p></p>
+    <p>
+      We build a real-time inference and rendering framework for 6-DoF video based on multi-sphere images.
+    </p>
+  </td>
+</tr>          
+
+          </tbody></table>
+
+            
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:right;font-size:small;">
+                  Website template from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
