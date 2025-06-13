@@ -49,6 +49,46 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
+    <tr onmouseout="nac_stop()" onmouseover="nac_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id="nac_image" style="opacity: 0;"><video width="100%" height="100%" muted="" autoplay="" loop="">
+          <source src="images/invprop.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src="images/invprop.png" width="160">
+        </div>
+        <script type="text/javascript">
+          function nac_start() {
+            document.getElementById('nac_image').style.opacity = "1";
+          }
+
+          function nac_stop() {
+            document.getElementById('nac_image').style.opacity = "0";
+          }
+          nac_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://anaghmalik.com/InvProp">
+          <papertitle>Neural Inverse Rendering from Propagating Light  </papertitle>
+        </a>
+        <br>
+        <a href="https://anaghmalik.com">Anagh Malik</a>, <strong>Benjamin Attal*</strong>, <a href="https://andrewxie.com/">Andrew Xie</a>,  <a href="https://www.cs.cmu.edu/~motoole2/">Matthew O'Toole</a>, <a href="https://davidlindell.com/">David B. Lindell</a>
+        <br>
+        <em>CVPR</em>, 2025 &nbsp; <font color="red"><strong>(Oral Presentation, Best Student Paper 🏆)</strong></font>
+        <br>
+        <a href="https://anaghmalik.com/InvProp/">project page</a>
+        /
+        <a href="https://www.arxiv.org/abs/2506.05347">arXiv</a>
+        
+        <p></p>
+        <p>
+          Time-resolved relighting and geometry estimation through radiance caching.
+        </p>
+      </td>
+    </tr>
+
     <tr onmouseout="flash_cache_stop()" onmouseover="flash_cache_start()">
       <td style="padding:20px;padding-top:50px;width:25%;vertical-align:middle">
         <div class="one">
