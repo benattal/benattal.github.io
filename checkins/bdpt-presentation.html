@@ -130,10 +130,32 @@
   svg .text-green  { fill: var(--green-dark); }
 
   .km { white-space: nowrap; }
+  /* Results grid */
+  .results-scene { margin-top: 2rem; }
+  .results-scene h3 { margin-bottom: 0.75rem; }
+  .results-grid {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+  }
+  .results-grid.three { grid-template-columns: 1fr 1fr 1fr; }
+  .results-grid.two { grid-template-columns: 1fr 1fr; }
+  .results-grid figure { margin: 0; text-align: center; }
+  .results-grid img {
+    width: 100%; height: auto; border-radius: 6px;
+    border: 0.5px solid var(--border);
+  }
+  .results-grid figcaption {
+    font-family: var(--font-sans); font-size: 11px; color: var(--fg3);
+    margin-top: 4px; line-height: 1.3;
+  }
+
   @media (max-width: 600px) {
     body { font-size: 16px; padding: 2rem 1rem 4rem; }
     h1 { font-size: 24px; }
     .math-line { padding: 10px 12px; font-size: 13px; }
+    .results-grid.three { grid-template-columns: 1fr; }
+    .results-grid.two { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -943,6 +965,95 @@
 
 <div class="math-line ml-gray display" style="border-left-width: 4px;">
   <span class="km" data-math="\hat{c}(x) = \hat{c}_e(x) + \hat{c}_l(x)"></span>
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 6: Results                                            -->
+<!-- ============================================================ -->
+<h2>Results</h2>
+
+<div class="results-scene">
+<h3>Lego</h3>
+
+<div class="results-grid three">
+  <figure><img src="images/lego/light_freq.png" alt="Mask (Light Frequency)"><figcaption>Mask (Light Frequency)</figcaption></figure>
+  <figure><img src="images/lego/p_l_area.png" alt="Light Density"><figcaption>Light Density (<span class="km" data-math="p_{l,\mathrm{area}}"></span>)</figcaption></figure>
+  <figure><img src="images/lego/p_e_area.png" alt="Eye Density"><figcaption>Eye Density (<span class="km" data-math="p_{e,\mathrm{area}}"></span>)</figcaption></figure>
+</div>
+
+<div class="results-grid two">
+  <figure><img src="images/lego/reference.png" alt="Reference"><figcaption>Reference</figcaption></figure>
+  <figure><img src="images/lego/total.png" alt="Predicted (Total)"><figcaption>Predicted (Total)</figcaption></figure>
+</div>
+
+<div class="results-grid two">
+  <figure><img src="images/lego/eye.png" alt="Eye Cache"><figcaption>Eye Cache</figcaption></figure>
+  <figure><img src="images/lego/light.png" alt="Light Cache"><figcaption>Light Cache</figcaption></figure>
+</div>
+</div>
+
+<hr class="divider">
+
+<div class="results-scene">
+<h3>Refractive Ball</h3>
+
+<div class="results-grid three">
+  <figure><img src="images/refractive-ball/light_freq.png" alt="Mask (Light Frequency)"><figcaption>Mask (Light Frequency)</figcaption></figure>
+  <figure><img src="images/refractive-ball/p_l_area.png" alt="Light Density"><figcaption>Light Density (<span class="km" data-math="p_{l,\mathrm{area}}"></span>)</figcaption></figure>
+  <figure><img src="images/refractive-ball/p_e_area.png" alt="Eye Density"><figcaption>Eye Density (<span class="km" data-math="p_{e,\mathrm{area}}"></span>)</figcaption></figure>
+</div>
+
+<div class="results-grid two">
+  <figure><img src="images/refractive-ball/reference.png" alt="Reference"><figcaption>Reference</figcaption></figure>
+  <figure><img src="images/refractive-ball/total.png" alt="Predicted (Total)"><figcaption>Predicted (Total)</figcaption></figure>
+</div>
+
+<div class="results-grid two">
+  <figure><img src="images/refractive-ball/eye.png" alt="Eye Cache"><figcaption>Eye Cache</figcaption></figure>
+  <figure><img src="images/refractive-ball/light.png" alt="Light Cache"><figcaption>Light Cache</figcaption></figure>
+</div>
+</div>
+
+<div class="results-scene">
+<h3>Refractive Ball (Tinted Glass)</h3>
+
+<div class="results-grid three">
+  <figure><img src="images/refractive-ball-tinted-glass/light_freq.png" alt="Mask (Light Frequency)"><figcaption>Mask (Light Frequency)</figcaption></figure>
+  <figure><img src="images/refractive-ball-tinted-glass/p_l_area.png" alt="Light Density"><figcaption>Light Density (<span class="km" data-math="p_{l,\mathrm{area}}"></span>)</figcaption></figure>
+  <figure><img src="images/refractive-ball-tinted-glass/p_e_area.png" alt="Eye Density"><figcaption>Eye Density (<span class="km" data-math="p_{e,\mathrm{area}}"></span>)</figcaption></figure>
+</div>
+
+<div class="results-grid two">
+  <figure><img src="images/refractive-ball-tinted-glass/reference.png" alt="Reference"><figcaption>Reference</figcaption></figure>
+  <figure><img src="images/refractive-ball-tinted-glass/total.png" alt="Predicted (Total)"><figcaption>Predicted (Total)</figcaption></figure>
+</div>
+
+<div class="results-grid two">
+  <figure><img src="images/refractive-ball-tinted-glass/eye.png" alt="Eye Cache"><figcaption>Eye Cache</figcaption></figure>
+  <figure><img src="images/refractive-ball-tinted-glass/light.png" alt="Light Cache"><figcaption>Light Cache</figcaption></figure>
+</div>
+</div>
+
+<hr class="divider">
+
+<div class="results-scene">
+<h3>Caustic Glass</h3>
+
+<div class="results-grid three">
+  <figure><img src="images/caustic-glass/light_freq.png" alt="Mask (Light Frequency)"><figcaption>Mask (Light Frequency)</figcaption></figure>
+  <figure><img src="images/caustic-glass/p_l_area.png" alt="Light Density"><figcaption>Light Density (<span class="km" data-math="p_{l,\mathrm{area}}"></span>)</figcaption></figure>
+  <figure><img src="images/caustic-glass/p_e_area.png" alt="Eye Density"><figcaption>Eye Density (<span class="km" data-math="p_{e,\mathrm{area}}"></span>)</figcaption></figure>
+</div>
+
+<div class="results-grid two">
+  <figure><img src="images/caustic-glass/reference.png" alt="Reference"><figcaption>Reference</figcaption></figure>
+  <figure><img src="images/caustic-glass/total.png" alt="Predicted (Total)"><figcaption>Predicted (Total)</figcaption></figure>
+</div>
+
+<div class="results-grid two">
+  <figure><img src="images/caustic-glass/eye.png" alt="Eye Cache"><figcaption>Eye Cache</figcaption></figure>
+  <figure><img src="images/caustic-glass/light.png" alt="Light Cache"><figcaption>Light Cache</figcaption></figure>
+</div>
 </div>
 
 <p style="margin-top: 2rem; color: var(--fg3); font-family: var(--font-sans); font-size: 12px; text-align: center;">— end of visual explainer —</p>
